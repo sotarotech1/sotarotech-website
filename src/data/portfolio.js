@@ -40,21 +40,35 @@ export const highlights = [
 
 export const projects = [
   {
-    title: 'Proyecto Web Corporativo',
+    title: 'PrintGraph IMP',
     description:
-      'Sitio web profesional enfocado en presentar servicios, información institucional y contacto de forma clara y responsive.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+      'Página web corporativa desarrollada con WordPress, enfocada en la presentación de servicios y optimización de visibilidad.',
+    technologies: ['WordPress', 'PHP', 'MySQL'],
+    image: '/images/printgraph.png',
+    url: 'https://printgraph-imp.com',
   },
   {
-    title: 'Tienda Online',
+    title: 'Tienda Cure',
     description:
-      'Proyecto de e-commerce orientado a la venta de productos, gestión de catálogo y experiencia de compra para usuarios.',
+      'Tienda virtual completa desarrollada con WordPress y WooCommerce, optimizada para la venta de calzados y gestión de pedidos.',
     technologies: ['WordPress', 'WooCommerce', 'PHP', 'MySQL'],
+    image: '/images/tiendacure.png',
+    url: 'https://tiendacure.com',
   },
   {
-    title: 'Aplicación Web Full Stack',
+    title: 'Corporación Xial (En desarrollo)',
     description:
-      'Aplicación web con frontend moderno, lógica backend y persistencia de datos para resolver procesos de negocio.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Git'],
+      'Catalogo virtual desarrollada con Wordpress y WooCommerce, optmizado para la venta por Whatsapp, cotización de productos y gestión de inventario.',
+    technologies: ['WordPress', 'WooCommerce', 'PHP', 'MySQL'],
+    image: '/images/corpxial.png',
+    url: 'https://corporacionxial.com.pe',
   },
+  {
+    title: 'Suditep Certificados',
+    description:
+      'Sistema de certificados para la gestión de alumnos, generador de certificados, y sumatoria de puntos para el Centro de Formación SUDITEP',
+    technologies: ['PHP', 'MySQL', 'React', 'TailwindCSS', 'PrimeReact'],
+    image: '/images/suditep.png',
+    url: 'https://suditep.edu.pe/certificados',
+  }
 ];

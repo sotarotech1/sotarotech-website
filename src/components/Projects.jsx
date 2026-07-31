@@ -23,9 +23,24 @@ function Projects({ projects }) {
             key={project.title}
           >
             <div className="mb-5 h-2 w-16 rounded-full bg-gradient-to-r from-emerald-400 to-green-600" />
+
+            {project.image && (
+              <div className="mb-5 overflow-hidden rounded-xl border border-emerald-300/10">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-48 w-full object-cover transition-transform duration-500 hover:scale-105"
+                  onError={(e) => {
+                    e.target.src = 'https://via.placeholder.com/400x200?text=Vista+Previa';
+                  }}
+                />
+              </div>
+            )}
+
             <h3 className="mb-3 text-[1.35rem] font-bold">{project.title}</h3>
             <p className="mb-5 flex-1 leading-7 text-emerald-50/75">{project.description}</p>
-            <div className="flex flex-wrap gap-2">
+
+            <div className="mb-6 flex flex-wrap gap-2">
               {project.technologies.map((technology) => (
                 <span
                   className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-sm font-semibold text-emerald-200"
@@ -35,6 +50,18 @@ function Projects({ projects }) {
                 </span>
               ))}
             </div>
+
+            {project.url && project.url !== '#' && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-2 rounded-xl bg-emerald-400 px-4 py-3 text-sm font-bold text-slate-950 transition-colors hover:bg-emerald-300"
+              >
+                Visitar Sitio Web
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            )}
           </article>
         ))}
       </div>
