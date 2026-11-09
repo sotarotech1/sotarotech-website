@@ -1,5 +1,5 @@
 export const contactEmail = 'sotarotech1@gmail.com';
-export const whatsappNumber = '51970898710';
+export const whatsappNumber = '51972184540';
 
 export const skillGroups = [
   {
